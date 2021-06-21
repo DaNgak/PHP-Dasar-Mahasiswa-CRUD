@@ -12,7 +12,6 @@
     // 3. Password (untuk xampp passwordnya kosong "")
     // 4. Nama Data Base
     $conn = mysqli_connect("localhost", "root", "", "mahasiswa");
-
     // Membuat Query untuk Menampilkan Data
     function querysql($query) {
         // Mengambil variabel $conn karena terhalang variabel scope
@@ -203,5 +202,4 @@
         return mysqli_affected_rows($conn);
     }
 
-    
 ?>
